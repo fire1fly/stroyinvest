@@ -1,0 +1,51 @@
+.footer
+  margin-top: 60px
+  padding: 59px 0
+  color: $footer-text-color
+  background-color: $footer-bg-color
+  &-policy
+    font-size: 12px
+  small
+    display: block
+    max-width: 80%
+    margin-top: 40px
+    line-height: 16px
+    font-size: 11px
+  a
+    color: $footer-text-color
+    text-decoration: none
+    &:hover
+      color: $white
+  ul
+    padding: 0
+    list-style: none
+    line-height: 32px
+  &-contacts
+    text-align: right
+    &__phone
+      a
+        font-size: 21px
+        +bold
+        color: $active-color
+        &:hover
+          color: lighten($active-color, 10%)
+  &-social-links
+    @extend .footer-contacts
+    margin-top: 30px
+    li
+      display: inline-block
+      a
+        margin-left: 10px
+        width: 35px
+        height: 35px  
+        padding: 10px
+        text-align: center
+        color: $white
+        background-color: rgba($white, 0.1)
+        border-radius: 50%
+        transition: all 0.2s
+        &:hover
+          color: $text-color
+          background-color: rgba($white, 0.9)
+      &:last-child
+        margin-top: 20px

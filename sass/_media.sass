@@ -1,0 +1,85 @@
+@media ( max-width: 1199px )
+  .top-nav
+    &__menu
+      justify-content: space-around
+      li
+        margin: 0
+  .footer
+    &-contacts
+      &__phone
+        a
+          font-size: 14px
+
+@media ( max-width: 991px )
+  .top-nav
+    padding: 0
+    &__menu
+      margin-top: 20px
+      justify-content: flex-end
+      flex-wrap: wrap
+      li
+        margin-right: 50px
+        margin-bottom: 14px
+        a
+          // font-size: 14px
+          &::after
+            transform: translateY(7px) scale(0) 
+          &:hover
+            &::after
+              transform: translateY(7px) scale(1)
+  .left-sidebar
+    &__object
+      &-description
+        padding-bottom: 20px
+        a 
+          font-size: 13px
+  .team
+    &-card
+      margin-bottom: 40px
+      h4
+        font-size: 16px
+      p
+        font-size: 14px
+        line-height: 1.5
+  .organization
+    &-card
+      a
+        font-size: 16px
+  
+  
+  
+@media ( max-width: 767px )
+  .top-nav
+    &__menu
+      display: none
+      flex-direction: column
+      text-align: center
+      li
+        margin: 0
+        line-height: 2.5
+        a
+          font-size: 18px
+          &::after
+            display: none
+    &__btn
+      display: block
+  .left-sidebar
+    &__btn
+      display: block
+    &__menu, &__object
+      display: none
+  .content
+    margin-top: 40px
+  .footer
+    &-contacts
+      text-align: center
+    &__menu
+      margin-left: 15px
+  .copy
+    margin-top: 40px
+    text-align: center
+    small
+      margin: 20px auto 0px
+
+
+  

@@ -1,0 +1,43 @@
+@import "reset"
+@import "_colors"
+@import "fonts"
+@import "header"
+@import "sidebar"
+@import "content"
+@import "footer"
+@import "fontello"
+
+html
+  font-size: 14px
+body
+  margin: 0
+  background-color: $body-bg
+  color: $text-color
+  +reg
+a
+  color: $active-color
+.btn
+  display: inline-block
+  padding: 20px 30px
+  font-size: 16px
+  +bold
+  background-color: red
+  color: $white
+  border-radius: 5px
+  border: none
+  text-decoration: none
+  &-primary
+    background-color: $active-color
+    border-bottom: 4px solid darken($active-color, 10%)
+    &:hover
+      background-color: lighten($active-color, 5%)
+    &:active
+      border-bottom: none
+      // transform: translateY(4px)
+      margin-top: 4px
+    &:focus
+      outline: none
+
+  
+// Медиа запросы, адаптив
+@import "media"
