@@ -84,34 +84,34 @@
 
           <div class="calc">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-lg-6">
                 <div class="calc-programms">
                   <div class="calc-radio">
-                    <input type="radio" name="programms" id="first" data-month="6" data-perc="0.2" checked>
+                    <input type="radio" data-month="6" data-perc="0.2" name="programms" id="first"  checked>
                     <label for="first">
                       <span>20% годовых<small>на 6 месяцев</small></span>
                     </label>
                   </div>
                   <div class="calc-radio">
-                    <input type="radio" name="programms" id="second" data-month="12" data-perc="0.24">
+                    <input type="radio" data-month="12" data-perc="0.24" name="programms" id="second" >
                     <label for="second">
                       <span>24% годовых<small>на 1 год</small></span>
                     </label>
                   </div>
                   <div class="calc-radio">
-                    <input type="radio" name="programms" id="third" data-month="24" data-perc="0.26">
+                    <input type="radio" data-month="24" data-perc="0.26" name="programms" id="third" >
                     <label for="third">
                       <span>26% годовых<small>на 2 года</small></span>
                     </label>
                   </div>
                   <div class="calc-radio">
-                    <input type="radio" name="programms" id="fourth" data-month="36" data-perc="0.28">
+                    <input type="radio" data-month="36" data-perc="0.28" name="programms" id="fourth" >
                     <label for="fourth">
                       <span>28% годовых<small>на 3 года</small></span>
                     </label>
                   </div>
                   <div class="calc-radio">
-                    <input type="radio" name="programms" id="fifth" data-month="48" data-perc="0.32">
+                    <input type="radio" data-month="48" data-perc="0.32" name="programms" id="fifth" >
                     <label for="fifth">
                       <span>32% годовых<small>на 4 года</small></span>
                     </label>
@@ -125,7 +125,7 @@
                 </div>
               </div>
               <!-- /.col-md-6 -->
-              <div class="col-md-6">
+              <div class="col-lg-6">
                 <h4>Укажите сумму инвестиций</h4>
                 <input class="calc-range" type="text">
                 <div class="calc-summ__invest">
@@ -134,11 +134,11 @@
                 </div>
                 <div>
                   <span class="calc-total">
-                    <strong>2 351 659 руб.</strong><br>
-                    <small>Сумма через 36 месяцев</small>
+                    <strong><span>110 000</span> руб.</strong><br>
+                    <small>Сумма через <span>6</span> месяцев</small>
                   </span>
                   <span class="calc-monthly">
-                    <strong>32 000 руб.</strong><br>
+                    <strong><span>1 666</span> руб.</strong><br>
                     <small>Ежемесячный доход</small>
                   </span>
                 </div>
@@ -221,12 +221,13 @@
       </div><!-- /.container -->
     </footer>
 
-    <script
-    src="https://code.jquery.com/jquery-1.12.4.min.js"
-    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-    crossorigin="anonymous"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
     <script src="slick/slick.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/powerange.min.js"></script>
+    <script>
+      let elem = document.querySelector('.calc-range');
+      let init = new Powerange(elem, { min: 100000, max: 3000000, start: 100000,  hideRange: true, step: 100000 });
+    </script>
   </body>
 </html>

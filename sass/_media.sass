@@ -9,6 +9,19 @@
       &__phone
         a
           font-size: 14px
+  .calc
+    &-popular
+      width: 140px
+      height: 38px
+    &-total, &-monthly
+      display: block
+      width: 200px
+      margin: 20px auto
+      padding: 5px 0
+    &-summ
+      &__invest
+        &-label
+          margin-bottom: 20px
 
 @media ( max-width: 991px )
   .top-nav
@@ -27,6 +40,14 @@
           &:hover
             &::after
               transform: translateY(7px) scale(1)
+  .calc
+    &-legal
+      margin-bottom: 40px
+    &-total, &-monthly
+      display: inline-block
+  .range-bar
+    width: 60%
+    
   .left-sidebar
     &__object
       &-description
@@ -45,6 +66,9 @@
     &-card
       a
         font-size: 16px
+  .object-card
+    margin: 20px auto
+    width: 370px
   
   
   
@@ -80,6 +104,20 @@
     text-align: center
     small
       margin: 20px auto 0px
+@media ( max-width: 575px )
+  .calc
+    &-radio
+      flex-basis: 100%
+    &-popular
+      width: 100px
+      font-size: 10px
+    &-total, &-monthly
+      display: block
+  .range-bar
+    width: 90%
+  .object-card
+    width: 300px
+  
 
 
   
